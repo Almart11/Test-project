@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spanish for kids</title>
+    <style>
+      h1 {
+        color: white;
+        font-size: 35px;
+      }
+      h2 {
+        color: bisque;
+      }
+      body {
+        text-align: center;
+        font-family: sans-serif;
+        margin: 8px;
+      }
+      section {
+        margin: 50px 150px;
+        padding: 30px;
+        background: linear-gradient(#2bb2d0, #3ec0b4);
+        border-radius: 10px;
+      }
+      div {
+        margin: 30px 0;
+      }
+      img {
+        max-width: 350px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 4px;
+      }
+      p {
+        text-align: justify;
+        font-size: large;
+        line-height: 30px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      button {
+        font-weight: bold;
+        background-color: #f6c133;
+        color: white;
+        border-radius: 20px;
+        border: 0;
+        padding: 10px;
+        transition: all 150ms ease-in-out;
+        cursor: pointer;
+      }
+      button:hover {
+        color: #3ec0b4;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Spanish lessons for kids</h1>
+      <h2>Fun and dynamic classes given by certified teachers</h2>
+      <div>
+        <strong>
+          Are you looking for fun and dynamic Spanish course for your child?
+          <br />
+          You came to the right place!
+        </strong>
+      </div>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/062/125/original/Greetings_-_Spanish_class.png?1673319690"
+        alt="Greetings"
+      />
+      <p>
+        Our classes focus on a communicative approach, for which we use
+        <em> interactive activities, games, music, videos and more </em>. Many
+        of these activities are what we have created ourselves exclusively for
+        each of our students, which allows us to adapt the curriculum to each
+        unique need, learning pace, and specific goals. <br />So what are you
+        waiting for? The best opportunity for your son or daughter to learn
+        Spanish is now here.
+      </p>
+      <div>¡Nos vemos en clase!</div>
+      <button>Book a lesson now!</button>
+      <hr />
+      <span>
+        <a href = "https://www.linkedin.com/in/aleima-martinez-42b41816b/" /a>
+        Contact us</span
+      >
+    </section>
+    <script>
+      function bookLesson() {
+        let name = prompt("Enter your name");
+        let email = prompt("Enter your email");
+        let h1 = document.querySelector("h1");
+        h1.innerHTML = `Hola ${name}, we will send you an email with further information`;
+      }
+
+      let applyNow = document.querySelector("button");
+      applyNow.addEventListener("click", bookLesson);
+    </script>
+  </body>
+</html>
